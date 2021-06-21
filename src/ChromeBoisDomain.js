@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { drawChromeBoiAtCoords, toggleCycling, resize } from './canvasHelpers.js'
 export default class ChromeBoisDomain extends Component {
-  
+
   handleMouseMove = (event) => {
     /* TODO: This method should capture the `x` and `y` coordinates of the mouse
      * from the event and use them to invoke the `drawChromeBoiAtCoords`
@@ -14,7 +14,7 @@ export default class ChromeBoisDomain extends Component {
   /* TODO: Create an event handler which, when fired, invokes the provided
 @@ -23,11 +24,21 @@ export default class ChromeBoisDomain extends Component {
   /* if the key pressed was 'a', then it should call `resize` with '+'
-  /* if the key pressed was 's', then it should call `resize` with '-' 
+  /* if the key pressed was 's', then it should call `resize` with '-'
    */
 
     handleKeyDown = (event) => {
@@ -27,7 +27,7 @@ export default class ChromeBoisDomain extends Component {
 
   render() {
     return (
-      <canvas 
+      <canvas
         onMouseMove={this.handleMouseMove}
         onClick={() => {toggleCycling()}}
         onKeyDown={this.handleKeyDown}
